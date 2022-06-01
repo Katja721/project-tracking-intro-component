@@ -1,6 +1,127 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+:root {
+  --red: hsl(0, 100%, 68%);
+  --very-dark-red: hsl(230, 29%, 20%);
+  --dark-grayish-blue: hsl(230, 11%, 40%);
+  --grayish-blue: hsl(231, 7%, 65%);
+  --light-grayish-blue: hsl(207, 33%, 95%);
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  margin: 0 0 0 10rem;
+  overflow: hidden;
+}
+h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: var(--very-dark-red);
+  width: 50%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  margin: 2rem 0 5rem 0;
+}
+.logo {
+  height: fit-content;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin: 0 2rem 0 0;
+}
+main {
+  display: flex;
+}
+.headingParagraph {
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--grayish-blue);
+  letter-spacing: 0.2em;
+}
+.textPargraph {
+  color: var(--dark-grayish-blue);
+  margin: 2rem 0 4rem 0;
+  width: 50%;
+}
+.mainText {
+  width: 50%;
+}
+.new {
+  background-color: var(--very-dark-red);
+  color: var(--light-grayish-blue);
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+  margin: 0 1rem 0 0;
+  letter-spacing: normal;
+}
+.demo {
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: var(--red);
+  border: none;
+  color: var(--light-grayish-blue);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.mainImage {
+  position: absolute;
+  right: -28.5rem;
+}
+.mainImage img {
+  width: 72%;
+}
+.live {
+  font-family: "Barlow Condensed", sans-serif;
+  background: none;
+  border: none;
+  color: var(--grayish-blue);
+  margin: 0 0 0 2rem;
+  letter-spacing: 0.2em;
+}
+.login {
+  color: var(--grayish-blue);
+  margin: 0 10rem 0 6rem;
+}
+.ilustration {
+  position: absolute;
+  width: 45rem;
+  height: 21rem;
+  background-color: var(--grayish-blue);
+  opacity: 0.2;
+  z-index: -1;
+  left: 40rem;
+  top: -1rem;
+  border-bottom-left-radius: 63px;
+}
+.login:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.pricing:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.features:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.product:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.demo:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 .attribution {
+  margin: 7rem 0;
   font-size: 11px;
   text-align: center;
 }
