@@ -6,6 +6,7 @@
   --dark-grayish-blue: hsl(230, 11%, 40%);
   --grayish-blue: hsl(231, 7%, 65%);
   --light-grayish-blue: hsl(207, 33%, 95%);
+  --white: hsl(0, 0%, 100%);
 }
 body {
   font-family: "Barlow", sans-serif;
@@ -120,6 +121,9 @@ main {
   cursor: pointer;
   opacity: 0.8;
 }
+.mobile {
+  display: none;
+}
 .attribution {
   margin: 7rem 0;
   font-size: 11px;
@@ -127,4 +131,95 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  body {
+    margin: 0 2rem;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  .ilustration {
+    left: 12rem;
+  }
+  .mainImage {
+    position: initial;
+  }
+  .mainImage img {
+    width: 152%;
+  }
+  .hamburger-icon {
+    width: 10%;
+    height: 15%;
+    margin: 0.3rem 0;
+  }
+  .mainText {
+    width: 100%;
+  }
+  h1 {
+    width: 100%;
+  }
+  .new {
+    padding: 0.2rem 0.6rem;
+  }
+  .textPargraph {
+    width: 98%;
+    margin: 0rem 0 2rem 0;
+  }
+  .live {
+    margin: 0 0 0 0.3rem;
+  }
+  li {
+    text-align: center;
+    margin: 1.5rem 2rem;
+  }
+  .login {
+    margin: 1.5rem 8rem;
+  }
+  ul {
+    padding: 0;
+  }
+  hr {
+    color: var(--light-grayish-blue);
+    width: 90%;
+  }
+  .menu {
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+      rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    position: absolute;
+    margin: 3rem 0.5rem;
+  }
+  .hidden {
+    display: none;
+  }
+  .close-icon {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  body {
+    margin: 0 0 0 2rem;
+  }
+  .mainImage {
+    right: -32.5rem;
+  }
+  .login {
+    margin: 0 2rem 0 1rem;
+  }
+  .ilustration {
+    left: 25rem;
+  }
+  h1 {
+    width: 72%;
+  }
+  .textPargraph {
+    width: 72%;
+  }
 }

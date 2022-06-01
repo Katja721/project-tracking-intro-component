@@ -11,14 +11,31 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script defer src="/script.js"></script>
     <title>Frontend Mentor | Project tracking intro component</title>
   </head>
   <body>
     <div class="ilustration"></div>
     <header class="header">
-      <img src="/images/logo.svg" class="logo" />
-      <ul class="menu">
+      <img src="/images/logo.svg" class="logo" alt="logo" />
+      <img
+        src="/images/icon-hamburger.svg"
+        class="hamburger-icon mobile"
+        alt="menu icon"
+      />
+      <img
+        src="/images/icon-close.svg"
+        class="close-icon hidden mobile"
+        alt="close icon"
+      />
+      <ul class="menu mobile hidden menu-mobile">
+        <li class="product">PRODUCT</li>
+        <li class="features">FEATURES</li>
+        <li class="pricing">PRICING</li>
+        <hr />
+        <li class="login">LOGIN</li>
+      </ul>
+      <ul class="menu desktop">
         <li class="product">PRODUCT</li>
         <li class="features">FEATURES</li>
         <li class="pricing">PRICING</li>
@@ -38,7 +55,7 @@
         <button class="live">TO SEE A LIVE PREVIEW</button>
       </div>
       <div class="mainImage">
-        <img src="/images/illustration-devices.svg" />
+        <img src="/images/illustration-devices.svg" alt="ilustration devices" />
       </div>
     </main>
 
